@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+@import './variables';
+@import './mixins';
+@import './normalize';
+@import './scrollbar';
+
+body {
+  height: 100%;
+  min-width: 300px;
+  min-height: 430px;
+  font-family: $app-font-family;
+}
+
+.app {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #1c1b15 url('../assets/images/bg_fire.png') no-repeat 0 47px;
+  background-size: contain;
+
+  .app-background-img {
+    position: fixed;
+    top: 47px;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
