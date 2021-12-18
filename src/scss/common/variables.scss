@@ -1,12 +1,14 @@
 // FONTS
-$app-font-family: 'Roboto Condensed', sans-serif;
+$app-font-family: "Roboto Condensed", Arial, sans-serif;
 
 // COLORS
 $header-background: #000;
-$footer-background: #000;
 $card-background: rgba(0, 0, 0, 0.21);
 $card-hover-background: rgba(0, 0, 0, 0.6);
 $title-text-color: #ccc;
+$header-link-color: #919191;
+$header-dark-text-color: #656565;
+$main-light-color: #fff;
 $hover-text-color: #fff;
 $price-now-color: #d1b482;
 $old-price-color: #999;
@@ -15,15 +17,6 @@ $discount-text-color: #fff;
 $purchase-button-background: #e95104;
 $purchase-button-hover-background: #e9951f;
 $purchase-text-color: #fff;
-$auth-form-text-color: #fff;
-$auth-form-border-color: rgba(255, 255, 245, 0.8);
-$auth-input-border-focus-color: rgba(255, 93, 0, 0.6);
-$auth-button-border-hover-color: rgba(255, 93, 0, 0.8);
-$auth-text-hover-color: #ff5d00;
-$incorrect-color: #e12600;
-$correct-color: #008000;
-$favorites-border-color: rgba(255, 255, 245, 0.8);
-$delete-button-color: #ff0048;
 $item-page-text-color: #fff;
 $item-page-border-color: rgba(255, 255, 255, 0.3);
 
@@ -38,13 +31,6 @@ $app-medium-media-query: 940px;
 $app-medium-width: 900px;
 $app-min-media-query: 320px;
 $app-min-width: 300px;
-$footer-social-networks-max-width: 200px;
-$footer-social-networks-medium-width: 170px;
-$footer-social-networks-min-width: 150px;
-$auth-form-width: 400px;
-$auth-form-height: 420px;
-$auth-form-mobile-width: 300px;
-$auth-form-mobile-height: 390px;
 
 // FILTERS
 $icon-brightness: brightness(6);

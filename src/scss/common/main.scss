@@ -1,4 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/RobotoCondensed-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../assets/fonts/RobotoCondensed-Bold.ttf") format("opentype");
+}
 
 @import "./variables";
 @import "./mixins";
@@ -17,14 +30,7 @@ body {
   align-items: center;
   flex-direction: column;
   background: #1c1b15 url("../assets/images/bg_fire.png") no-repeat 0 47px;
-  background-size: contain;
-
-  .app-background-img {
-    position: fixed;
-    top: 47px;
-    left: 0;
-    z-index: 1;
-  }
+  background-size: cover;
 }
 
 .visually-hidden {

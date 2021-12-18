@@ -2,86 +2,50 @@
 <html lang="en">
   <head>
     <title>WG Forge Shop 2021</title>
-    <link href="./index.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
-      <h1 class="visually-hidden">Word of tanks premium shop</h1>
-      <nav class="nav">
-        <div class="logo">
-          <a href="#">
-            <svg class="logo-icon">
-              <use xlink:href="assets/public/sprite.svg#WGLogo"></use>
-            </svg>
-            Premium shop
+    <div class="app">
+      <header class="header">
+        <h1 class="visually-hidden">Word of tanks. Premium shop</h1>
+        <nav class="nav">
+          <a class="logo" href="#">
+            <img
+              class="premium-logo"
+              src="./assets/images/premium_logo.png"
+              alt="Premium shop logo"
+            />
+            <span class="premium-logo__title">Premium shop</span>
           </a>
-        </div>
-        <div class="nav-menu">
-          <div class="nav-menu__sub-menu">
-            <a href="#/favorites" id="wish-list">
-              Wishlist (2)
-              <span id="wish-list__quantity" class="quantity"></span>
-            </a>
-            <a href="#/cart" id="cart">
-              Shopping cart (5)
-              <span id="cart__quantity" class="quantity"></span>
-            </a>
+          <div class="nav-menu">
+            <div class="nav-menu__sub-menu">
+              <a href="#">Wishlist<span class="quantity">(2)</span></a>
+              <a href="#">Shopping cart<span class="quantity">(5)</span></a>
+            </div>
+            <div class="authentication">
+              <a href="#">Login</a>
+              <span> or</span>
+              <a href="#">Create account</a>
+            </div>
           </div>
-          <div class="authentication">
-            <a class="authentication-signin" href="#/signin">Login</a
-            ><span> or</span>
-            <a class="authentication-signup" href="#/signup">Create account</a>
-          </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
-    <div class="main">
-      <div class="content-menu">
-        <a href="#" class="WoT_logo"
-          ><img src="./assets/public/WoT_logo.png" alt="WoT logo"
-        /></a>
-        <div class="content-menu__buttons">
-          <button class="active-menu__button">All</button>
-          <button>Vehicles</button>
-          <button>Gold</button>
-          <button>Premium account</button>
+      <div class="main">
+        <div class="main__menu">
+          <a href="#" class="main__logo">
+            <img src="./assets/images/WoT_logo.png" alt="WoT logo" />
+          </a>
+          <div class="menu__nav">
+            <button class="menu__nav_active">All</button>
+            <button>Vehicles</button>
+            <button>Gold</button>
+            <button>Premium account</button>
+          </div>
         </div>
+        <div class="cards-field" id="cards-container"></div>
       </div>
-      <div class="cards-field" id="cards-container"></div>
-      <div id="list-end"></div>
     </div>
-
-    <footer class="footer">
-      <div class="footer-info">
-        <svg class="forge-logo">
-          <use xlink:href="assets/public/sprite.svg#forgeLogo"></use>
-        </svg>
-        <p class="create-date">© 2021</p>
-        <div class="social-networks-block">
-          <a href="https://t.me/wgforge" target="_blank">
-            <svg class="networks-logo">
-              <use xlink:href="./assets/public/sprite.svg#telegram"></use>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/wgforge/" target="_blank">
-            <svg class="networks-logo">
-              <use xlink:href="./assets/public/sprite.svg#instagram"></use>
-            </svg>
-          </a>
-          <a href="https://vk.com/wgforge" target="_blank">
-            <svg class="networks-logo">
-              <use xlink:href="./assets/public/sprite.svg#VK"></use>
-            </svg>
-          </a>
-          <a href="https://web.facebook.com/WGForge" target="_blank">
-            <svg class="networks-logo">
-              <use xlink:href="./assets/public/sprite.svg#facebook"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </footer>
     <script src="index.js"></script>
   </body>
 </html>

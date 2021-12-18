@@ -1,5 +1,1 @@
-// import "./index.scss";
-
-// import appInit from "./components/app/app";
-
-// appInit();
+console.log("Hello from JS!");
