@@ -3,6 +3,7 @@ import mainPage from '../main-page/main-page';
 import footer from '../footer/footer';
 
 const appInit = () => {
+  debugger;
   const appElement = document.createElement('div');
   appElement.classList.add('app');
 
@@ -10,7 +11,7 @@ const appInit = () => {
   appElement.insertAdjacentHTML('beforeend', mainPage.render());
   appElement.insertAdjacentHTML('beforeend', footer.render());
 
-  document.body.append(appElement);
+  document.querySelector('body').appendChild(appElement);
 };
 
 export default appInit;

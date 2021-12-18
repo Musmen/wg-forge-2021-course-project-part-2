@@ -1,4 +1,4 @@
-@import '../../../scss/variables';
+@import "../../../scss/variables";
 
 .header {
   width: 100%;
@@ -87,36 +87,21 @@
       }
 
       .authentication {
+        display: flex;
+
         a {
-          margin-right: 0;
+          margin-right: 5px;
         }
 
-        .authentication-wrapper {
-          display: flex;
-          justify-content: space-evenly;
-        }
-
-        .authentication-user-name {
-          display: inline-block;
-          max-width: 100px;
-          width: 100px;
-          margin-right: 10px;
-
-          text-align: right;
-          text-transform: capitalize;
-
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
-
-          cursor: default;
+        span {
+          margin-right: 5px;
         }
 
         button {
           width: 20px;
           font-size: 0;
 
-          background-image: url('../../../assets/images/logout.png');
+          background-image: url("../../../assets/images/logout.png");
           background-position-y: 4px;
           background-repeat: no-repeat;
           background-size: contain;
@@ -155,91 +140,6 @@
       .nav-menu {
         a {
           margin-right: 60px;
-        }
-      }
-    }
-  }
-}
-@media all and (max-width: $app-medium-media-query) {
-  .header {
-    .nav {
-      width: $app-min-width;
-
-      a {
-        font-size: 0;
-      }
-
-      span {
-        font-size: 16px;
-      }
-
-      .logo {
-        width: 135px;
-
-        a {
-          font-size: 14px;
-        }
-
-        .logo-icon {
-          width: 17px;
-          height: 17px;
-        }
-      }
-
-      .nav-menu {
-        justify-content: space-between;
-
-        a {
-          margin-right: 15px;
-        }
-
-        #wish-list::before {
-          font-size: 16px;
-          content: url('../../../assets/images/heart.png');
-        }
-
-        #cart::before {
-          font-size: 16px;
-          content: url('../../../assets/images/cart.png');
-        }
-
-        .authentication {
-          display: flex;
-          justify-content: space-evenly;
-
-          height: 35px;
-          font-size: 0;
-
-          span {
-            display: none;
-          }
-
-          .authentication-signin {
-            margin-right: 15px;
-
-            &::before {
-              font-size: 26px;
-              content: url('../../../assets/images/login.png');
-              cursor: pointer;
-            }
-          }
-
-          .authentication-signup {
-            &::before {
-              font-size: 26px;
-              content: url('../../../assets/images/registration.png');
-              cursor: pointer;
-              filter: $icon-brightness;
-            }
-          }
-
-          .authentication-user-name {
-            display: none;
-          }
-
-          button {
-            filter: $icon-brightness;
-          }
         }
       }
     }

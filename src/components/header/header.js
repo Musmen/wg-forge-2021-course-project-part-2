@@ -1,7 +1,5 @@
-import './scss/header.styles.scss';
-
 class HeaderComponent {
-  render(): string {
+  render() {
     return `
       <header class="header">
         <h1 class="visually-hidden">Word of tanks premium shop</h1>

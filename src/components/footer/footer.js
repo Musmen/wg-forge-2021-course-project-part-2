@@ -1,5 +1,3 @@
-import './scss/footer.styles.scss';
-
 class FooterComponent {
   render() {
     return `
