@@ -3,34 +3,20 @@ $app-font-family: "Roboto Condensed", Arial, sans-serif;
 
 // COLORS
 $header-background: #000;
-$card-background: rgba(0, 0, 0, 0.21);
-$card-hover-background: rgba(0, 0, 0, 0.6);
+$card-background: #00000036;
+$card-hover-background: #00000099;
 $title-text-color: #ccc;
 $header-link-color: #919191;
 $header-dark-text-color: #656565;
 $main-light-color: #fff;
 $hover-text-color: #fff;
 $price-now-color: #d1b482;
-$old-price-color: #999;
-$discount-background: #a61c00;
-$discount-text-color: #fff;
 $purchase-button-background: #e95104;
-$purchase-button-hover-background: #e9951f;
 $purchase-text-color: #fff;
-$item-page-text-color: #fff;
-$item-page-border-color: rgba(255, 255, 255, 0.3);
 
 // ANIMATION
 $app-standard-transition: all 200ms;
 $card-transition: all 300ms;
 
 //  SIZE
-$app-max-media-query: 1260px;
 $app-max-width: 1200px;
-$app-medium-media-query: 940px;
-$app-medium-width: 900px;
-$app-min-media-query: 320px;
-$app-min-width: 300px;
-
-// FILTERS
-$icon-brightness: brightness(6);

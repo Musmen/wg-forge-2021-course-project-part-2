@@ -1,21 +1,12 @@
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../assets/fonts/RobotoCondensed-Regular.ttf") format("opentype");
-}
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url("../assets/fonts/RobotoCondensed-Bold.ttf") format("opentype");
-}
-
-@import "./variables";
-@import "./mixins";
+@import "./fonts";
 @import "./normalize";
+@import "./variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 
 body {
   height: 100%;
@@ -31,6 +22,11 @@ body {
   flex-direction: column;
   background: #1c1b15 url("../assets/images/bg_fire.png") no-repeat 0 47px;
   background-size: cover;
+}
+
+.centralizer {
+  width: 1200px;
+  margin: 0 20px;
 }
 
 .visually-hidden {

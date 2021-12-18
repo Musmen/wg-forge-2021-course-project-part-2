@@ -13,14 +13,6 @@
   src: url("../assets/fonts/RobotoCondensed-Bold.ttf") format("opentype");
 }
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,
-*::before,
-*::after {
   box-sizing: border-box;
 }
 
@@ -51,25 +43,12 @@ textarea {
   background: none;
 }
 
-input::-ms-clear {
-  display: none;
-}
-
 button {
   cursor: pointer;
 }
 
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
 a {
   cursor: pointer;
-}
-
-a,
-a:visited {
   text-decoration: none;
 }
 
@@ -96,8 +75,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
   font-weight: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 body {
@@ -114,6 +98,11 @@ body {
   flex-direction: column;
   background: #1c1b15 url("../assets/images/bg_fire.png") no-repeat 0 47px;
   background-size: cover;
+}
+
+.centralizer {
+  width: 1200px;
+  margin: 0 20px;
 }
 
 .visually-hidden {
@@ -202,10 +191,234 @@ body {
   margin-right: 5px;
 }
 
-.main {
-  flex: 1 1 auto;
-  margin-bottom: 30px;
+.flag {
+  width: 21px;
+  height: 14px;
+  margin-right: 8px;
 }
+.flag_all {
+  background: url("../assets/flags/all.png");
+  width: 13px;
+  height: 14px;
+  margin: 0 11px 0 5px;
+}
+.flag_china {
+  background: url("../assets/flags/china.png");
+}
+.flag_czech {
+  background: url("../assets/flags/czech.png");
+}
+.flag_france {
+  background: url("../assets/flags/france.png");
+}
+.flag_germany {
+  background: url("../assets/flags/germany.png");
+}
+.flag_poland {
+  background: url("../assets/flags/poland.png");
+}
+.flag_sweden {
+  background: url("../assets/flags/sweden.png");
+}
+.flag_uk {
+  background: url("../assets/flags/uk.png");
+}
+.flag_usa {
+  background: url("../assets/flags/usa.png");
+}
+.flag_ussr {
+  background: url("../assets/flags/ussr.png");
+}
+.flag_italy {
+  background: url("../assets/flags/italy.png");
+}
+.flag_japan {
+  background: url("../assets/flags/japan.png");
+}
+.flag_merc {
+  background: url("../assets/flags/marc.png");
+}
+
+.tank-type {
+  width: 9px;
+  height: 15px;
+  margin-right: 8px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.tank-type_all {
+  background-image: url("../assets/types/all.png");
+  width: 17px;
+  height: 11px;
+  margin-right: 5px;
+}
+.tank-type_at-spg {
+  background-image: url("../assets/types/at-spg.png");
+}
+.tank-type_heavytank {
+  background-image: url("../assets/types/heavytank.png");
+}
+.tank-type_lighttank {
+  background-image: url("../assets/types/lighttank.png");
+}
+.tank-type_mediumtank {
+  background-image: url("../assets/types/mediumtank.png");
+}
+.tank-type_multirole {
+  background-image: url("../assets/types/multirole.png");
+}
+.tank-type_spg {
+  background-image: url("../assets/types/spg.png");
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 300px;
+  background-color: #00000036;
+  transition: all 300ms;
+}
+.card_single {
+  width: 300px;
+}
+.card_single .card__specifications {
+  left: 27px;
+}
+.card_single .card__img {
+  width: 293px;
+}
+.card_single .like-btn {
+  width: 35px;
+  right: 20px;
+}
+.card_single .purchase-btn {
+  left: 26px;
+}
+.card_double {
+  width: 600px;
+}
+.card_double .card__specifications {
+  left: 54px;
+}
+.card_double .card__img {
+  width: 480px;
+}
+.card_double .like-btn {
+  width: 70px;
+  right: 4px;
+}
+.card_double .purchase-btn {
+  left: 52px;
+}
+.card .card__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.card .card__info .card__img {
+  margin-bottom: 15px;
+  transition: all 300ms;
+}
+.card .card__info .card__img_small {
+  width: 170px;
+}
+.card .card__info .card__specifications {
+  position: absolute;
+  bottom: 30px;
+  transition: all 300ms;
+}
+.card .card__info .card__specifications .item__description {
+  display: flex;
+  margin-bottom: 10px;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.33);
+  color: #ccc;
+}
+.card .card__info .card__specifications .item__description .item__level {
+  margin-right: 8px;
+}
+.card .card__info .card__specifications .item__description .item__title {
+  max-width: 300px;
+  text-transform: none;
+}
+.card .card__info .card__specifications .item__price {
+  display: flex;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.33);
+  color: #d1b482;
+}
+.card .purchase-btn {
+  opacity: 0;
+  width: 150px;
+  height: 45px;
+  bottom: 30px;
+  position: absolute;
+  border-radius: 3px;
+  border: 1px solid #e95104;
+  background: none;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: #fff;
+  transition: all 200ms;
+}
+.card .purchase-btn:hover {
+  background-color: #e95104;
+}
+.card .purchase-btn__active {
+  background-color: #e95104;
+}
+.card .purchase-btn__active:hover {
+  color: #e95104;
+  background-color: #fff;
+}
+.card .like-btn {
+  position: absolute;
+  top: 20px;
+  height: 30px;
+  background-image: url("../assets/images/heart_empty.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 34px 30px;
+  opacity: 0.7;
+  transition: all 200ms;
+}
+.card .like-btn:hover {
+  background-image: url("../assets/images/heart_filled.png");
+}
+.card .like-btn_active {
+  background-image: url("../assets/images/heart_filled.png");
+  opacity: 0.6;
+}
+.card:hover {
+  background-color: #00000099;
+  transition: all 300ms;
+}
+.card:hover .card__img {
+  opacity: 0.65;
+  transition: all 300ms;
+}
+.card:hover .card__specifications {
+  bottom: 85px;
+  transition: all 300ms;
+}
+.card:hover .purchase-btn {
+  opacity: 1;
+  transition: all 600ms;
+}
+
 .main .main__menu {
   display: flex;
   justify-content: space-between;
@@ -242,11 +455,9 @@ body {
   color: #fff;
   border-bottom: 4px solid #fff;
 }
-.main .cards-field {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1px;
-  grid-auto-flow: row dense;
+.main .cards-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=index.css.map */
