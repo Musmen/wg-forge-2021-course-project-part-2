@@ -1,0 +1,93 @@
+@import "../common/variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  height: 47px;
+
+  background: $header-background;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a,
+    span {
+      font-size: 15px;
+      line-height: 30px;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      color: $header-link-color;
+      transition: $app-standard-transition;
+
+      &:hover {
+        color: $hover-text-color;
+        transition: $app-standard-transition;
+      }
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      .premium-logo {
+        margin-right: 12px;
+      }
+
+      .premium-logo__title {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: $title-text-color;
+      }
+
+      &:hover {
+        .premium-logo__title {
+          color: $hover-text-color;
+        }
+      }
+    }
+
+    .nav-menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .nav-menu__sub-menu {
+        display: flex;
+        flex-direction: row;
+      }
+
+      a {
+        display: flex;
+        margin-right: 66px;
+      }
+
+      span {
+        color: $header-dark-text-color;
+      }
+
+      .quantity {
+        color: #fff;
+        margin-left: 5px;
+      }
+
+      .authentication {
+        display: flex;
+
+        a {
+          margin-right: 5px;
+        }
+
+        span {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

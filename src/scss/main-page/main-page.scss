@@ -1,0 +1,60 @@
+@import "../common/variables";
+@import "../product/product";
+
+.main {
+  .main__menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    .main__logo {
+      img {
+        width: 160px;
+        height: 80px;
+      }
+    }
+
+    .menu__nav {
+      display: flex;
+      margin-top: 45px;
+
+      button {
+        margin-left: 30px;
+        padding: 5px 9px;
+
+        font-family: $app-font-family;
+        font-size: 17px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: $title-text-color;
+
+        border-bottom: 4px solid transparent;
+
+        transition: all 200ms;
+
+        &:hover {
+          color: $hover-text-color;
+          border-bottom: 4px solid $main-light-color;
+          transition: $app-standard-transition;
+        }
+      }
+
+      .menu__nav_active {
+        color: $hover-text-color;
+        border-bottom: 4px solid #fff;
+      }
+    }
+  }
+
+  .cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+    @media (max-width: $app-max-width) {
+      margin-bottom: 60px;
+    }
+  }
+}
