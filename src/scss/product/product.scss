@@ -22,12 +22,21 @@
       height: 118px;
       margin-bottom: 15px;
       transition: $card-transition;
+
+      @media (max-width: $app-max-width) {
+        height: 106px;
+      }
     }
 
     &_extension {
       .card__img {
         width: 213px;
         height: 145px;
+
+        @media (max-width: $app-max-width) {
+          width: 170px;
+          height: 116px;
+        }
       }
     }
 
@@ -36,6 +45,11 @@
         width: 170px;
         height: 166px;
         margin-bottom: 40px;
+
+        @media (max-width: $app-max-width) {
+          width: 136px;
+          height: 133px;
+        }
       }
     }
 
@@ -44,6 +58,11 @@
         width: 222px;
         height: 175px;
         margin-bottom: 85px;
+
+        @media (max-width: $app-max-width) {
+          width: 178px;
+          height: 140px;
+        }
       }
     }
 
@@ -52,6 +71,11 @@
         width: 254px;
         height: 152px;
         margin-bottom: 25px;
+
+        @media (max-width: $app-max-width) {
+          width: 205px;
+          height: 120px;
+        }
       }
     }
 
@@ -78,8 +102,12 @@
         }
 
         .item__title {
-          max-width: 300px;
+          max-width: 270px;
           text-transform: none;
+
+          @media (max-width: $app-max-width) {
+            max-width: 200px;
+          }
         }
       }
 
@@ -94,10 +122,26 @@
         color: $price-color;
       }
     }
+
+    .card__info_vehicle {
+      .card__specifications {
+        .item__title {
+          max-width: 150px;
+
+          @media (max-width: $app-max-width) {
+            max-width: 136px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $app-max-width) {
+    height: 248px;
   }
 
   &_single {
-    width: 300px;
+    width: 298px;
 
     .card__specifications {
       left: 27px;
@@ -105,6 +149,10 @@
 
     .card__img {
       width: 243px;
+
+      @media (max-width: $app-max-width) {
+        width: 219px;
+      }
     }
 
     .like-btn {
@@ -115,10 +163,14 @@
     .purchase-btn {
       left: 26px;
     }
+
+    @media (max-width: $app-max-width) {
+      width: 248px;
+    }
   }
 
   &_double {
-    width: 602px;
+    width: 598px;
 
     .card__specifications {
       left: 54px;
@@ -128,6 +180,11 @@
       .card__img {
         width: 480px;
         height: 221px;
+
+        @media (max-width: $app-max-width) {
+          width: 384px;
+          height: 180px;
+        }
       }
     }
 
@@ -138,6 +195,10 @@
 
     .purchase-btn {
       left: 52px;
+    }
+
+    @media (max-width: $app-max-width) {
+      width: 498px;
     }
   }
 

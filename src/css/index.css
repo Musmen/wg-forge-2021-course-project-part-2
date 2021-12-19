@@ -101,8 +101,14 @@ body {
 }
 
 .centralizer {
-  width: 1240px;
-  margin: 0 10px;
+  width: 1200px;
+  margin: 0 30px;
+}
+@media (max-width: 1259px) {
+  .centralizer {
+    width: 1000px;
+    margin: 0 12px;
+  }
 }
 
 .visually-hidden {
@@ -128,7 +134,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1200px;
 }
 .header .nav a,
 .header .nav span {
@@ -291,24 +296,53 @@ body {
   margin-bottom: 15px;
   transition: all 300ms;
 }
+@media (max-width: 1259px) {
+  .card .card__info .card__img {
+    height: 106px;
+  }
+}
 .card .card__info_extension .card__img {
   width: 213px;
   height: 145px;
+}
+@media (max-width: 1259px) {
+  .card .card__info_extension .card__img {
+    width: 170px;
+    height: 116px;
+  }
 }
 .card .card__info_premium .card__img {
   width: 170px;
   height: 166px;
   margin-bottom: 40px;
 }
+@media (max-width: 1259px) {
+  .card .card__info_premium .card__img {
+    width: 136px;
+    height: 133px;
+  }
+}
 .card .card__info_reserves .card__img {
   width: 222px;
   height: 175px;
   margin-bottom: 85px;
 }
+@media (max-width: 1259px) {
+  .card .card__info_reserves .card__img {
+    width: 178px;
+    height: 140px;
+  }
+}
 .card .card__info_gold .card__img {
   width: 254px;
   height: 152px;
   margin-bottom: 25px;
+}
+@media (max-width: 1259px) {
+  .card .card__info_gold .card__img {
+    width: 205px;
+    height: 120px;
+  }
 }
 .card .card__info .card__specifications {
   position: absolute;
@@ -331,8 +365,13 @@ body {
   margin-right: 8px;
 }
 .card .card__info .card__specifications .item__description .item__title {
-  max-width: 300px;
+  max-width: 270px;
   text-transform: none;
+}
+@media (max-width: 1259px) {
+  .card .card__info .card__specifications .item__description .item__title {
+    max-width: 200px;
+  }
 }
 .card .card__info .card__specifications .item__price {
   display: flex;
@@ -344,14 +383,32 @@ body {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.33);
   color: #d1b482;
 }
+.card .card__info .card__info_vehicle .card__specifications .item__title {
+  max-width: 150px;
+}
+@media (max-width: 1259px) {
+  .card .card__info .card__info_vehicle .card__specifications .item__title {
+    max-width: 136px;
+  }
+}
+@media (max-width: 1259px) {
+  .card {
+    height: 248px;
+  }
+}
 .card_single {
-  width: 300px;
+  width: 298px;
 }
 .card_single .card__specifications {
   left: 27px;
 }
 .card_single .card__img {
   width: 243px;
+}
+@media (max-width: 1259px) {
+  .card_single .card__img {
+    width: 219px;
+  }
 }
 .card_single .like-btn {
   width: 35px;
@@ -360,8 +417,13 @@ body {
 .card_single .purchase-btn {
   left: 26px;
 }
+@media (max-width: 1259px) {
+  .card_single {
+    width: 248px;
+  }
+}
 .card_double {
-  width: 602px;
+  width: 598px;
 }
 .card_double .card__specifications {
   left: 54px;
@@ -370,12 +432,23 @@ body {
   width: 480px;
   height: 221px;
 }
+@media (max-width: 1259px) {
+  .card_double .card__info .card__img {
+    width: 384px;
+    height: 180px;
+  }
+}
 .card_double .like-btn {
   width: 70px;
   right: 4px;
 }
 .card_double .purchase-btn {
   left: 52px;
+}
+@media (max-width: 1259px) {
+  .card_double {
+    width: 498px;
+  }
 }
 .card .purchase-btn {
   opacity: 0;
@@ -441,7 +514,6 @@ body {
 .main .main__menu {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
   margin: 20px 0;
 }
 .main .main__menu .main__logo img {
@@ -478,6 +550,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 100px;
+}
+@media (max-width: 1259px) {
+  .main .cards-list {
+    margin-bottom: 60px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

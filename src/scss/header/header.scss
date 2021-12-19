@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%; //!
+  width: 100%;
 
   height: 47px;
 
@@ -14,7 +14,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: $app-max-width; //!
 
     a,
     span {
@@ -56,7 +55,6 @@
 
     .nav-menu {
       display: flex;
-      // min-width: 1200px; // !
       justify-content: flex-end;
       align-items: center;
 

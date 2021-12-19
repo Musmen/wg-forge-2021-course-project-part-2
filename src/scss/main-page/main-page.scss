@@ -5,8 +5,6 @@
   .main__menu {
     display: flex;
     justify-content: space-between;
-
-    width: $app-max-width;
     margin: 20px 0;
 
     .main__logo {
@@ -54,5 +52,9 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
+
+    @media (max-width: $app-max-width) {
+      margin-bottom: 60px;
+    }
   }
 }
