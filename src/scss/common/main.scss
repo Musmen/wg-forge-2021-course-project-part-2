@@ -21,12 +21,12 @@ body {
   align-items: center;
   flex-direction: column;
   background: #1c1b15 url("../assets/images/bg_fire.png") no-repeat 0 47px;
-  background-size: cover;
+  background-size: contain;
 }
 
 .centralizer {
-  width: 1200px;
-  margin: 0 20px;
+  width: 1240px;
+  margin: 0 10px; // 1
 }
 
 .visually-hidden {

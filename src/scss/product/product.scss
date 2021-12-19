@@ -6,51 +6,10 @@
   position: relative;
   display: block;
   height: 300px;
+  margin: 1px;
 
   background-color: $card-background;
   transition: $card-transition;
-
-  &_single {
-    width: 300px;
-
-    .card__specifications {
-      left: 27px;
-    }
-
-    .card__img {
-      width: 293px;
-    }
-
-    .like-btn {
-      width: 35px;
-      right: 20px;
-    }
-
-    .purchase-btn {
-      left: 26px;
-    }
-  }
-
-  &_double {
-    width: 600px;
-
-    .card__specifications {
-      left: 54px;
-    }
-
-    .card__img {
-      width: 480px;
-    }
-
-    .like-btn {
-      width: 70px;
-      right: 4px;
-    }
-
-    .purchase-btn {
-      left: 52px;
-    }
-  }
 
   .card__info {
     display: flex;
@@ -60,11 +19,39 @@
     height: 100%;
 
     .card__img {
+      height: 118px;
       margin-bottom: 15px;
       transition: $card-transition;
+    }
 
-      &_small {
+    &_extension {
+      .card__img {
+        width: 213px;
+        height: 145px;
+      }
+    }
+
+    &_premium {
+      .card__img {
         width: 170px;
+        height: 166px;
+        margin-bottom: 40px;
+      }
+    }
+
+    &_reserves {
+      .card__img {
+        width: 222px;
+        height: 175px;
+        margin-bottom: 85px;
+      }
+    }
+
+    &_gold {
+      .card__img {
+        width: 254px;
+        height: 152px;
+        margin-bottom: 25px;
       }
     }
 
@@ -104,8 +91,53 @@
         font-weight: 400;
         letter-spacing: 0.1em;
         text-shadow: 0 1px 0 rgba(0, 0, 0, 0.33);
-        color: $price-now-color;
+        color: $price-color;
       }
+    }
+  }
+
+  &_single {
+    width: 300px;
+
+    .card__specifications {
+      left: 27px;
+    }
+
+    .card__img {
+      width: 243px;
+    }
+
+    .like-btn {
+      width: 35px;
+      right: 20px;
+    }
+
+    .purchase-btn {
+      left: 26px;
+    }
+  }
+
+  &_double {
+    width: 602px;
+
+    .card__specifications {
+      left: 54px;
+    }
+
+    .card__info {
+      .card__img {
+        width: 480px;
+        height: 221px;
+      }
+    }
+
+    .like-btn {
+      width: 70px;
+      right: 4px;
+    }
+
+    .purchase-btn {
+      left: 52px;
     }
   }
 
