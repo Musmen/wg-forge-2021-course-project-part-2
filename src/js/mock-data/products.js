@@ -27,13 +27,6 @@ export default [
     price: 28.99,
   },
   {
-    productType: "premium",
-    isDouble: false,
-    imageSrc: "premium3.png",
-    title: "WOT PREMIUM ACCOUNT: 3 DAYS",
-    price: 2.99,
-  },
-  {
     productType: "vehicle",
     isDouble: true,
     imageSrc: "m56.png",
@@ -44,6 +37,13 @@ export default [
     price: 24.99,
   },
   {
+    productType: "premium",
+    isDouble: false,
+    imageSrc: "premium3.png",
+    title: "WOT PREMIUM ACCOUNT: 3 DAYS",
+    price: 2.99,
+  },
+  {
     productType: "vehicle",
     isDouble: false,
     imageSrc: "fv4202.png",
@@ -52,6 +52,16 @@ export default [
     vehicleType: "mediumtank",
     level: "VIII",
     price: 40.99,
+  },
+  {
+    productType: "vehicle",
+    isDouble: true,
+    imageSrc: "t92.png",
+    title: "T92",
+    flag: "usa",
+    vehicleType: "multirole",
+    level: "VIII",
+    price: 36.99,
   },
   {
     productType: "vehicle",
@@ -76,15 +86,5 @@ export default [
     imageSrc: "gold.png",
     title: "GOLD 25.000",
     price: 99.99,
-  },
-  {
-    productType: "vehicle",
-    isDouble: true,
-    imageSrc: "t92.png",
-    title: "T92",
-    flag: "usa",
-    vehicleType: "multirole",
-    level: "VIII",
-    price: 36.99,
   },
 ];

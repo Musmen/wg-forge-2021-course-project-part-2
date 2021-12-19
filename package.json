@@ -8,8 +8,8 @@
     "sass": "^1.45.0"
   },
   "scripts": {
-    "sass": "sass src/scss/index.scss src/css/index.css",
-    "watch": "sass --watch src/scss/index.scss src/css/index.css"
+    "sass": "sass --no-source-map src/scss/index.scss src/css/index.css",
+    "watch": "sass --watch --no-source-map src/scss/index.scss src/css/index.css"
   },
   "repository": {
     "type": "git",
